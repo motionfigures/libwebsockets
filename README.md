@@ -24,6 +24,13 @@ News
    and JWE support built (which use gencrypto and so also work the same
    regardless of tls library backend).
 
+ - **`x.509`** - new generic x509 api allows PEM-based certificate and key
+   trust relationship verification, and conversion between x.509 keys and
+   JWK.  Works for EC and RSA keys, and on mbedtls and OpenSSl the same.
+
+   [x.509 api](https://libwebsockets.org/git/libwebsockets/tree/include/libwebsockets/lws-x509.h), 
+   [x.509 minimal example](https://libwebsockets.org/git/libwebsockets/tree/minimal-examples/crypto/minimal-crypto-x509)
+
  - **`JWE`** - JWE (RFC7516) Algorithms with CI tests:
 
 |Key Encryption|Payload authentication + crypt|Enc + Dec Support|
